@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Marcas";
+}
+
+@model PE.TabelaFipe.App.ViewModels.FipeReport
+
+
+<div class="col-md-6">
+    <form asp-action="Index" method="post">
+
+        <div class="form-group">
+            <label class="control-label"><b>Selecione o que deseja pesquisar</b></label>
+            <select asp-for="Marca" class="form-control">
+                <option>carros</option>
+                <option>motos</option>
+                <option>caminhoes</option>
+            </select>
+        </div>
+
+        @if (Model.Marcas.Count > 0)
+        {
+            <div class="form-group">
+                <label class="control-label">Selecione uma marca</label>
+                <select asp-for="CodigoMarca" class="form-control" asp-items=@(new SelectList(Model.Marcas, "Codigo", "Nome"))>
+                    <option></option>
+                </select>
+            </div>
+        }
+        @if (Model.Modelos.Count > 0)
+        {
+            <div class="form-group">
+                <label class="control-label">Selecione um modelo</label>
+                <select asp-for="CodigoModelo" class="form-control" asp-items="@(new SelectList(Model.Modelos, "Codigo","Nome"))">
+                    <option></option>
+                </select>
+            </div>
+        }
+        @if (Model.ModelosPorAno.Count > 0)
+        {
+            <div class="form-group">
+                <label class="control-label">Selecione o ano</label>
+                <select asp-for="CodigoAno" class="form-control" asp-items="@(new SelectList(Model.ModelosPorAno, "Codigo","Nome"))">
+                    <option></option>
+                </select>
+            </div>
+        }
+        <div class="form-group">
+            <input type="submit" value="Pesquisar" class="btn btn-info" />
+        </div>
+
+    </form>
+
+    @if (Model.Fipe != null)
+    {
+        <table class="table table-hover">
+            <thead class="bg-light text-black-50">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fipe.TipoVeiculo)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(model => model.Fipe.TipoVeiculo)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fipe.Marca)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(model => model.Fipe.Marca)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fipe.Modelo)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(model => model.Fipe.Modelo)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fipe.AnoModelo)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(model => model.Fipe.AnoModelo)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fipe.Combustivel)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(model => model.Fipe.Combustivel)
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fipe.MesReferencia)
+                    </th>
+                    <th>
+                        @Html.DisplayFor(model => model.Fipe.MesReferencia)
+                    </th>
+                </tr>
+            <thead class="bg-danger text-white">
+                <tr>
+                    <th>
+                            @Html.DisplayNameFor(model => model.Fipe.Valor)
+                    </th>
+                    <th>
+                            @Html.DisplayFor(model => model.Fipe.Valor)
+                    </th>
+                </tr>
+            </thead>
+            </thead>
+        </table>
+    }
+
+</div>

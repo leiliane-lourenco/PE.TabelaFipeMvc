@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F17725B9-87E7-43B1-9083-4F1433194758}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1- Presentation", "1- Presentation", "{41D0FE3C-B8F0-466B-8593-F80ED555A985}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2- Application", "2- Application", "{CCA0DC45-1729-4140-B691-44C9D6741FE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3- Infraestructure", "3- Infraestructure", "{D945DC18-6B80-430E-961B-06883F837F77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PE.TabelaFipe.App", "src\PE.TabelaFipe.App\PE.TabelaFipe.App.csproj", "{06D80867-7B13-4A2B-A2C3-0DDB2139F9BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PE.TabelaFipe.Application", "src\PE.TabelaFipe.Application\PE.TabelaFipe.Application.csproj", "{200F77C8-8673-4C60-9780-E4C3C814F89F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PE.TabelaFipe.Repository", "src\PE.TabelaFipe.Repository\PE.TabelaFipe.Repository.csproj", "{2BD61FE2-F6CD-47FC-8EDF-56D41F7989D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06D80867-7B13-4A2B-A2C3-0DDB2139F9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D80867-7B13-4A2B-A2C3-0DDB2139F9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D80867-7B13-4A2B-A2C3-0DDB2139F9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D80867-7B13-4A2B-A2C3-0DDB2139F9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{200F77C8-8673-4C60-9780-E4C3C814F89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{200F77C8-8673-4C60-9780-E4C3C814F89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{200F77C8-8673-4C60-9780-E4C3C814F89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{200F77C8-8673-4C60-9780-E4C3C814F89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD61FE2-F6CD-47FC-8EDF-56D41F7989D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD61FE2-F6CD-47FC-8EDF-56D41F7989D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD61FE2-F6CD-47FC-8EDF-56D41F7989D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD61FE2-F6CD-47FC-8EDF-56D41F7989D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41D0FE3C-B8F0-466B-8593-F80ED555A985} = {F17725B9-87E7-43B1-9083-4F1433194758}
+		{CCA0DC45-1729-4140-B691-44C9D6741FE2} = {F17725B9-87E7-43B1-9083-4F1433194758}
+		{D945DC18-6B80-430E-961B-06883F837F77} = {F17725B9-87E7-43B1-9083-4F1433194758}
+		{06D80867-7B13-4A2B-A2C3-0DDB2139F9BB} = {41D0FE3C-B8F0-466B-8593-F80ED555A985}
+		{200F77C8-8673-4C60-9780-E4C3C814F89F} = {CCA0DC45-1729-4140-B691-44C9D6741FE2}
+		{2BD61FE2-F6CD-47FC-8EDF-56D41F7989D7} = {D945DC18-6B80-430E-961B-06883F837F77}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7649D301-BE4C-485B-8F92-2B9E8FCD3C11}
+	EndGlobalSection
+EndGlobal
