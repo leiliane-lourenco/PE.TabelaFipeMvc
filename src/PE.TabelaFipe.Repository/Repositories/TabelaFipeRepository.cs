@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using PE.TabelaFipe.Repository.Models;
 using PE.TabelaFipe.Repository.Models.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -31,6 +32,7 @@ namespace PE.TabelaFipe.Repository.Repositories
                 return marcasViewModel;
 
             }
+
             throw new ErrorRequest(content, response.StatusCode, content);
 
         }

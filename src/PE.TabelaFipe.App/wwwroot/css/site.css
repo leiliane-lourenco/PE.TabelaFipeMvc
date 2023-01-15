@@ -12,10 +12,9 @@ a {
   color: #0366d6;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+
+.button {
+   
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -34,6 +33,14 @@ html {
     font-size: 16px;
   }
 }
+body {
+    
+        background-image:linear-gradient(white,lightgray)
+}
+
+h3 {
+    font-weight: bold
+}
 
 .border-top {
   border-top: 1px solid #e5e5e5;
@@ -49,6 +56,21 @@ html {
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
+}
+
+/* CSS */
+
+table {
+    text-align: left;
+    font-family: Montserrat, Arial, sans-serif;
+    background: #fafafa;
+    margin: 0 auto;
+    width: 100%;
+
+}
+   
+tr:nth-child(even) {
+    background: lightgray;
 }
 
 /* Sticky footer styles

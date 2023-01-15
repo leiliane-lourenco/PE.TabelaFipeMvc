@@ -9,7 +9,7 @@
     <form asp-action="Index" method="post">
 
         <div class="form-group">
-            <label class="control-label"><b>Selecione o que deseja pesquisar</b></label>
+            <label class="control-label"><b><h5>Selecione o veículo</h5></b></label>
             <select asp-for="Marca" class="form-control">
                 <option>carros</option>
                 <option>motos</option>
@@ -49,71 +49,65 @@
         </div>
 
     </form>
-
-    @if (Model.Fipe != null)
-    {
-        <table class="table table-hover">
-            <thead class="bg-light text-black-50">
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Fipe.TipoVeiculo)
-                    </th>
-                    <th>
-                        @Html.DisplayFor(model => model.Fipe.TipoVeiculo)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Fipe.Marca)
-                    </th>
-                    <th>
-                        @Html.DisplayFor(model => model.Fipe.Marca)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Fipe.Modelo)
-                    </th>
-                    <th>
-                        @Html.DisplayFor(model => model.Fipe.Modelo)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Fipe.AnoModelo)
-                    </th>
-                    <th>
-                        @Html.DisplayFor(model => model.Fipe.AnoModelo)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Fipe.Combustivel)
-                    </th>
-                    <th>
-                        @Html.DisplayFor(model => model.Fipe.Combustivel)
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Fipe.MesReferencia)
-                    </th>
-                    <th>
-                        @Html.DisplayFor(model => model.Fipe.MesReferencia)
-                    </th>
-                </tr>
-            <thead class="bg-danger text-white">
-                <tr>
-                    <th>
-                            @Html.DisplayNameFor(model => model.Fipe.Valor)
-                    </th>
-                    <th>
-                            @Html.DisplayFor(model => model.Fipe.Valor)
-                    </th>
-                </tr>
-            </thead>
-            </thead>
-        </table>
-    }
-
 </div>
+<br />
+@if (Model.Fipe != null)
+{
+    <h2>Tabela Fipe</h2>
+    <table class="table table-hover">
+        <thead class="bg-light text-black-50">
+           
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fipe.Marca)
+                </th>
+                <th>
+                    @Html.DisplayFor(model => model.Fipe.Marca)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fipe.Modelo)
+                </th>
+                <th>
+                    @Html.DisplayFor(model => model.Fipe.Modelo)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fipe.AnoModelo)
+                </th>
+                <th>
+                    @Html.DisplayFor(model => model.Fipe.AnoModelo)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fipe.Combustivel)
+                </th>
+                <th>
+                    @Html.DisplayFor(model => model.Fipe.Combustivel)
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fipe.MesReferencia)
+                </th>
+                <th>
+                    @Html.DisplayFor(model => model.Fipe.MesReferencia)
+                </th>
+            </tr>
+        <thead class="bg-info text-white">
+            <tr>
+                <th>
+                        @Html.DisplayNameFor(model => model.Fipe.Valor)
+                </th>
+                <th>
+                        @Html.DisplayFor(model => model.Fipe.Valor)
+                </th>
+            </tr>
+        </thead>
+        </thead>
+    </table>
+}
+

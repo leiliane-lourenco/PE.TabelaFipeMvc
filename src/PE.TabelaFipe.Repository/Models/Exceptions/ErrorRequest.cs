@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PE.TabelaFipe.Repository.Models.Exceptions
 {
-    public  class ErrorRequest : Exception
+    public class ErrorRequest : Exception
     {
         public HttpStatusCode HttpStatusCode { get; set; }
         public object DadosErro { get; set; }

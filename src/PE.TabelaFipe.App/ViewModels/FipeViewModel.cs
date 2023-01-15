@@ -5,7 +5,7 @@ namespace PE.TabelaFipe.App.ViewModels
 {
     public class FipeViewModel
     {
-        [DisplayName("Valor")]
+        [DisplayName("Preço FIPE")]
         public string Valor { get; set; }
 
         [DisplayName("Fabricante")]
